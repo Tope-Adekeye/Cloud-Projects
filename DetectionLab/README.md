@@ -149,8 +149,7 @@ This DetectionLab environment demonstrates expertise in:
 
 ---
 
-## 🏆 **Acknowledgments**
+## 🏆 **Key Technologies**
 
-Original DetectionLab created by Chris Long (@clong). This curated version maintains the technical excellence while optimizing for professional portfolio demonstration and enterprise security training scenarios.
-
-**Key Technologies**: Microsoft ATA • Splunk • osquery • Fleet • Sysmon • Zeek • Suricata • Windows Event Forwarding • Terraform • Ansible • Vagrant
+**Security Stack**: Microsoft ATA • Splunk • osquery • Fleet • Sysmon • Zeek • Suricata • Windows Event Forwarding  
+**Infrastructure**: Terraform • Ansible • Vagrant • Multi-cloud deployment • Enterprise virtualization platforms

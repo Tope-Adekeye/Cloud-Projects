@@ -189,5 +189,3 @@ This AWS WAF Security Automations solution demonstrates expertise in:
 **Core Technologies**: AWS WAF • CloudFormation • CDK • Lambda • CloudWatch • Athena • S3 • SNS  
 **Security Features**: OWASP Protection • DDoS Mitigation • Bot Detection • Threat Intelligence • Rate Limiting  
 **Integration**: API Gateway • CloudFront • Application Load Balancer • DevSecOps Pipelines
-
-*Originally developed by AWS Solutions Architecture team. This curated version optimizes for professional portfolio demonstration and enterprise security implementation.*

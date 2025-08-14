@@ -12,6 +12,7 @@ Perfect for demonstrating IaC hygiene, automated guardrails, and attack-path tes
 | **[microburst/](microburst/)** | **Azure penetration testing toolkit with offensive security capabilities** | **Azure pentesting • PowerShell • Credential harvesting • Red team • Privilege escalation** |
 | **[gcp-bucketbrute/](gcp-bucketbrute/)** | **Google Cloud Storage bucket enumeration and privilege analysis tool** | **GCP reconnaissance • Storage enumeration • IAM analysis • Permission testing • Python** |
 | **[azuregoat/](azuregoat/)** | **Vulnerable-by-design Azure infrastructure for security training and testing** | **OWASP Top 10 • Azure vulnerabilities • Security training • IaC • Attack/defense scenarios** |
+| **[serverless-demo/](serverless-demo/)** | **Full-stack serverless web application with AWS managed services** | **AWS Lambda • API Gateway • DynamoDB • Cognito • S3 • Serverless Framework • IaC** |
 
 ### Usage
 

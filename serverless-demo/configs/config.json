@@ -1,0 +1,138 @@
+{
+  "development": {
+    "aws": {
+      "region": "us-east-1",
+      "profile": "default",
+      "stage": "dev"
+    },
+    "cognito": {
+      "userPoolId": "us-east-1_XXXXXXXXX",
+      "clientId": "XXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "region": "us-east-1"
+    },
+    "apiGateway": {
+      "baseUrl": "https://api.dev.example.com",
+      "version": "v1",
+      "timeout": 30000
+    },
+    "dynamodb": {
+      "tableName": "serverless-demo-dev-items",
+      "region": "us-east-1",
+      "billingMode": "PAY_PER_REQUEST"
+    },
+    "s3": {
+      "bucketName": "serverless-demo-dev-frontend",
+      "region": "us-east-1",
+      "websiteUrl": "http://serverless-demo-dev-frontend.s3-website-us-east-1.amazonaws.com"
+    },
+    "monitoring": {
+      "enableDetailedMonitoring": true,
+      "logLevel": "DEBUG",
+      "enableXRayTracing": false
+    }
+  },
+  "staging": {
+    "aws": {
+      "region": "us-east-1",
+      "profile": "staging",
+      "stage": "staging"
+    },
+    "cognito": {
+      "userPoolId": "us-east-1_YYYYYYYYY",
+      "clientId": "YYYYYYYYYYYYYYYYYYYYYYYYYY",
+      "region": "us-east-1"
+    },
+    "apiGateway": {
+      "baseUrl": "https://api.staging.example.com",
+      "version": "v1",
+      "timeout": 30000
+    },
+    "dynamodb": {
+      "tableName": "serverless-demo-staging-items",
+      "region": "us-east-1",
+      "billingMode": "PAY_PER_REQUEST"
+    },
+    "s3": {
+      "bucketName": "serverless-demo-staging-frontend",
+      "region": "us-east-1",
+      "websiteUrl": "http://serverless-demo-staging-frontend.s3-website-us-east-1.amazonaws.com"
+    },
+    "monitoring": {
+      "enableDetailedMonitoring": true,
+      "logLevel": "INFO",
+      "enableXRayTracing": true
+    }
+  },
+  "production": {
+    "aws": {
+      "region": "us-east-1",
+      "profile": "production",
+      "stage": "prod"
+    },
+    "cognito": {
+      "userPoolId": "us-east-1_ZZZZZZZZZ",
+      "clientId": "ZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "region": "us-east-1"
+    },
+    "apiGateway": {
+      "baseUrl": "https://api.example.com",
+      "version": "v1",
+      "timeout": 30000,
+      "customDomain": "api.example.com"
+    },
+    "dynamodb": {
+      "tableName": "serverless-demo-prod-items",
+      "region": "us-east-1",
+      "billingMode": "PROVISIONED",
+      "readCapacity": 5,
+      "writeCapacity": 5
+    },
+    "s3": {
+      "bucketName": "serverless-demo-prod-frontend",
+      "region": "us-east-1",
+      "websiteUrl": "https://example.com",
+      "cloudFrontDistribution": "EXXXXXXXXXXXXX"
+    },
+    "monitoring": {
+      "enableDetailedMonitoring": true,
+      "logLevel": "WARN",
+      "enableXRayTracing": true,
+      "enableCloudWatchAlarms": true
+    }
+  },
+  "common": {
+    "application": {
+      "name": "Serverless Web Application Demo",
+      "version": "1.0.0",
+      "description": "Full-stack serverless web application using AWS services"
+    },
+    "security": {
+      "jwtExpirationTime": "24h",
+      "passwordPolicy": {
+        "minLength": 8,
+        "requireUppercase": true,
+        "requireLowercase": true,
+        "requireNumbers": true,
+        "requireSymbols": false
+      },
+      "corsOrigins": ["*"],
+      "corsHeaders": ["Content-Type", "Authorization"],
+      "corsMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+    },
+    "features": {
+      "userRegistration": true,
+      "emailVerification": true,
+      "passwordReset": true,
+      "mfaEnabled": false,
+      "socialLogin": false
+    },
+    "limits": {
+      "maxItemsPerUser": 100,
+      "maxItemNameLength": 255,
+      "maxItemDescriptionLength": 1000,
+      "apiRateLimit": 1000,
+      "lambdaTimeout": 30,
+      "lambdaMemory": 256
+    }
+  }
+}

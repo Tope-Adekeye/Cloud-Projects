@@ -8,6 +8,7 @@ Perfect for demonstrating IaC hygiene, automated guardrails, and attack-path tes
 | **[DetectionLab/](DetectionLab/)** | **Multi-cloud SOC analytics lab with pre-configured security tooling** | **Enterprise SOC operations • SIEM/Splunk • Threat hunting • Multi-cloud IaC** |
 | **[aws-waf-security-automations/](aws-waf-security-automations/)** | **Automated web application firewall with intelligent threat detection** | **AWS WAF • DDoS mitigation • Bot detection • CloudFormation/CDK • OWASP protection** |
 | **[guacamole-aws/](guacamole-aws/)** | **Clientless remote desktop gateway with zero-trust security architecture** | **Zero-trust access • Terraform IaC • RDP/SSH/VNC • Secure bastion • AWS networking** |
+| **[cloudsploit/](cloudsploit/)** | **Multi-cloud security misconfiguration scanner with compliance frameworks** | **Security assessment • AWS/Azure/GCP/Oracle • PCI/HIPAA/CIS • Risk analysis • Automation** |
 
 ### Usage
 
